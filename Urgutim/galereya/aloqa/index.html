@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa va bron — Urgut tumani</title>
+  <!-- [12] tashqi CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- [12] ichki CSS -->
+  <style>
+    h1.page-title { margin-bottom: 14px; border-bottom: 4px solid var(--gold); display: inline-block; padding-bottom: 4px; }
+  </style>
+</head>
+<body id="top">
+<!-- [1] struktura: header -->
+<header class="site-header">
+  <h1><a href="../index.html"><img class="logo-img" src="../rasmlar/Urgut.png" alt="Urgut logotipi">Urgut tumani</a></h1>
+  <p class="tagline">Samarqand viloyati — tog' etagidagi qadimiy diyor</p>
+</header>
+<!-- [2] gipermurojaatlar: menyu -->
+<nav class="main-nav">
+    <a href="../index.html">Bosh sahifa</a>
+    <a href="../joylar/index.html">Ziyoratgohlar</a>
+    <a href="../qishloqlar/index.html">Qishloqlar</a>
+    <a href="../xizmatlar/index.html">Xizmatlar</a>
+    <a href="../galereya/index.html">Galereya</a>
+    <a href="../yuklab/index.html">Yuklab olish</a>
+    <a href="index.html" class="active">Aloqa</a>
+</nav>
+<!-- [1] main -->
+<main class="container">
+<ul class="crumbs"><li><a href="../index.html">Bosh sahifa</a></li><li>Aloqa va bron</li></ul>
+<h1 class="page-title">Aloqa va bron</h1>
+<section class="card"><h2>Bog'lanish</h2>
+<dl class="facts"><dt>Manzil</dt><dd>Urgut shahri, tuman hokimligi</dd><dt>Telefon</dt><dd><a href="tel:+998000000000">+998 00 000 00 00</a></dd>
+<dt>E-pochta</dt><dd><a href="mailto:info@urgut.example">info@urgut.example</a></dd></dl></section>
+<section class="card" id="bron"><h2>Bron formasi</h2>
+<form class="form" action="#" method="post">
+  <fieldset><legend>Shaxsiy ma'lumotlar</legend>
+    <div class="form-row">
+      <label>Ism-familiya<input type="text" name="ism" placeholder="Masalan: Ibrohim Narzullayev" required></label>
+      <label>Telefon<input type="tel" name="tel" placeholder="+998 95 123 45 67" required></label>
+    </div>
+    <label>E-pochta<input type="email" name="email" placeholder="salima@mail.uz"></label>
+  </fieldset>
+  <fieldset><legend>Bron ma'lumotlari</legend>
+    <div class="form-row">
+      <label>Xizmat turi<select name="xizmat" required>
+        <option value="">Tanlang</option><option>Ziyoratgohlar safari</option><option>Teshiktosh ekskursiyasi</option>
+        <option>Urgut bozori turi</option><option>Hokimlik qabuliga yozilish</option><option>Hokim yordamchisi bilan uchrashuv</option></select></label>
+      <label>Odamlar soni<input type="number" name="soni" min="1" max="50" value="1"></label>
+    </div>
+    <div class="form-row">
+      <label>Sana<input type="date" name="sana" required></label>
+      <label>Vaqt<input type="time" name="vaqt"></label>
+    </div>
+    <p>Transport: <label class="inline"><input type="radio" name="transport" value="oz" checked> O'zim boraman</label>
+       <label class="inline"><input type="radio" name="transport" value="taksi"> Taksi kerak</label></p>
+  </fieldset>
+  <label>Izoh<textarea name="izoh" rows="4" placeholder="Qo'shimcha istaklar"></textarea></label>
+  <div class="actions"><button class="btn" type="submit">Bron qilish</button><button class="btn btn-outline" type="reset">Tozalash</button></div>
+  <p class="note">Forma HTML asosida; ma'lumot yuborish uchun keyinchalik server qismi ulanadi.</p>
+</form></section>
+</main>
+<a class="to-top" href="#top" title="Yuqoriga"></a>
+<footer class="site-footer">
+  <p>Urgut tumani axborot tizimi — o'quv loyihasi.</p>
+  <p>Narzullayeva Sevinch</p>
+  <p><a href="https://uz.wikipedia.org/wiki/Urgut_tumani" target="_blank" rel="noopener">Vikipediya</a></p>
+</footer>
+</body>
+</html>
